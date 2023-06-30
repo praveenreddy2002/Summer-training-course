@@ -1,0 +1,21 @@
+public class lec_3_primitive_data_type
+{
+    public static void main(String args[])
+{
+        int s=6;
+        int y=8;
+        System.out.println("the value of s is : "+s);
+        System.out.println("the value of y is : "+y);
+
+        byte b=12;
+        System.out.println("value of b is : "+ b);
+        int z=b;
+        System.out.println("Value of z is : "+b);
+
+        byte b2=(byte)137;
+        System.out.println("b2 is : "+b2);
+
+        byte b3=(byte)256; 
+        System.out.println("b2 is : "+b3);
+    }
+}
