@@ -1,0 +1,59 @@
+import java.util.Scanner;
+class Student
+{
+    String name;
+    int marks;
+    boolean checkPass(){
+        if(marks>40)
+            return true;
+        return false;
+    }
+}
+
+public class ControlFlow {
+    int findMax(int a,int b,int c){
+        if(a>b){ //nested if else
+            if(a>c)
+                return a;
+            else
+                return c;
+        }
+        else{
+            if(b>c)
+                return b;
+            return c;
+        }
+    }
+    public static void main(String[] args) {
+            Student s1=new Student();
+            s1.name="Praveenreddy";
+            s1.marks=40;
+
+            Student s2=new Student();
+            s2.name="Manish";
+            s2.marks=57;
+            System.out.println(s1.checkPass());
+            System.out.println(s2.checkPass());
+
+            ControlFlow cf=new ControlFlow();
+            System.out.println(cf.findMax(23,72,15));
+
+        Scanner sc=new Scanner(System.in);
+
+        char c='Y';
+        switch(c){
+            case 'X':
+                System.out.println("Hlo, Iam X");
+                break;
+            case 'Y':
+                System.out.println("Hlo, Iam Y");
+                break;
+            case 'Z':
+                System.out.println("Hlo, Iam Z");
+                break;
+            default:
+                System.out.println("Iam not X,Y,Z");
+
+        }
+    }
+}
